@@ -1,0 +1,46 @@
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+$primaryColor : #f2f2f2;
+$secondaryColor : #292d35;
+
+@import 'components/buttons';
+@import 'components/forms';
+
+
+body
+{
+	background-color : $primaryColor;	
+	min-height : 100%;
+	margin : 0;
+	overflow : auto;
+	position : relative;
+
+	header
+	{
+		background-color : rgba(0,0,0,0.4);
+		position : absolute;
+		width : 100%;
+		height : 60px;
+		z-index : 2;
+		
+	}
+
+	section
+	{	
+		background-color : $secondaryColor;
+		height : 80%;
+		padding-top : 60px;
+	}
+
+	main
+	{
+		height : 100%;
+	}
+
+	footer
+	{
+		width : 100%;
+		height : 100px;
+		background-color : $secondaryColor;
+	}
+}
+
