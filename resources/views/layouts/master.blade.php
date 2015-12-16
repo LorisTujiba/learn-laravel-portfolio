@@ -6,7 +6,22 @@
 		<link rel="stylesheet" href="{{elixir('css/app.css')}}">
 	</head>
 	<body>		
-		<header>			
+		<header>
+			<nav>
+				<ul>
+					<a>
+						<li>
+							Home
+						</li>
+					</a>
+					<a>
+						<li>
+							Home
+						</li>
+					</a>
+					
+				</ul>
+			</nav>			
 		</header>
 		<section>
 			@yield('section')
