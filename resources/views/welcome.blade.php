@@ -1,5 +1,11 @@
 @extends('layouts.master')
 
 @section('section')
-	<button>Lorem Ipsum</button>
+	<h1>Loris Tujiba</h1>
+	<h2>Web Developer</h2>
+	<button>Let's talk</button>
+@endsection
+
+@section('main')
+	<h3>Who is Loris ?</h3>
 @endsection
