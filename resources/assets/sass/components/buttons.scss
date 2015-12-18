@@ -19,3 +19,38 @@ button
 	font-family: 'Rajdhani', sans-serif;
 	display : none;
 }
+
+input[type="submit"]
+{
+	background-color : $greenButtonColor;
+	color : white;
+	border-radius : 4px;
+	border : 2px solid transparent;
+	font-style : oblique;
+	font-weight : bold;
+	font-size : 1.5em;
+	line-height : 1.7;
+	width : 8em;
+	padding : 0 3em;
+	display : block;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.icon-wrapper
+{
+	border : 1px solid rgb(19,55,131);
+	border-radius : 100%;
+	display : inline-block;
+	width : 40px;
+	height : 40px;
+	text-align : center;
+	color : white;
+	background-color : #3b5998;
+	transition : 0.25s;
+
+	i
+	{
+		line-height : 40px;
+	}
+	
+}

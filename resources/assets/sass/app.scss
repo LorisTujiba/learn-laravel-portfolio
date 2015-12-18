@@ -14,84 +14,102 @@ body
 	margin : 0;
 	overflow : auto;
 	position : relative;
+	font-family: 'Rajdhani', sans-serif;
+}
 
-	header
+header
+{
+	background-color : rgba(0,0,0,0.4);
+	position : absolute;
+	width : 100%;
+	height : 60px;
+	z-index : 2;
+	color : white;
+
+	nav
 	{
-		background-color : rgba(0,0,0,0.4);
-		position : absolute;
-		width : 100%;
-		height : 60px;
-		z-index : 2;
-		color : white;
-
-		nav
+		ul
 		{
-			ul
+			li
 			{
-				li
-				{
-					display : inline;
-					list-style-type : none;				
-				}
+				display : inline;
+				list-style-type : none;				
 			}
-			
-		}		
-	}
-
-	section
-	{	
-		background-color : $secondaryColor;
-		background-image : url('../../images/HeroImage.jpg');
-		background-size : 100% 100%;
-		height : 65%;
-		padding-top : 60px;
-		position : relative;
-		border-bottom : 1px solid black;
-
-		h1
-		{
-			font-size : 6.5em;
-			text-align : center;
-			color : white;
-			font-family: 'Caveat', cursive;	
-			margin : 150px 0 0 0;	
-			line-height : 1.7;	
-			letter-spacing: 15px;
-			display : none;
 		}
+		
+	}		
+}
 
-		h2
-		{
-			font-size : 1.3em;
-			text-align : center;
-			color : white;
-			margin : 0;
-			font-family: 'Rajdhani', sans-serif;
-			letter-spacing: 22px;
-			display : none;
-		}
-	}
+.heroBanner
+{	
+	background-color : $secondaryColor;
+	background-image : url('../../images/HeroImage.jpg');
+	background-size : 100% 100%;
+	height : 70%;
+	padding-top : 60px;
+	position : relative;
+	border-bottom : 1px solid black;
 
-	main
+	h1
 	{
-		height : 100%;
-		font-family: 'Rajdhani', sans-serif;
-
-		h3
-		{
-			text-align : center;
-			font-size : 2em;
-			letter-spacing: 12px;
-			font-weight : bold;
-			display : none;
-		}
+		font-size : 6.5em;
+		text-align : center;
+		color : white;
+		font-family: 'Caveat', cursive;	
+		margin : 150px 0 0 0;	
+		line-height : 1.7;	
+		letter-spacing: 15px;
+		display : none;
 	}
 
-	footer
+	h2
 	{
-		width : 100%;
-		height : 100px;
-		background-color : $secondaryColor;
+		font-size : 1.3em;
+		text-align : center;
+		color : white;
+		margin : 0;		
+		letter-spacing: 22px;
+		display : none;
 	}
+}
+
+main
+{
+	height : 100%;
+	font-family: 'Rajdhani', sans-serif;
+
+	h3
+	{
+		text-align : center;
+		font-size : 2em;
+		letter-spacing: 12px;
+		font-weight : bold;
+		display : none;
+	}
+
+	> .about-me
+	{
+		width : 80%;
+		margin : 0 auto;	
+		display : none;	
+	}
+
+	.contact-me
+	{
+
+	}
+}
+
+footer
+{
+	width : 100%;
+	height : 100px;
+	background-color : $secondaryColor;
+}
+
+p
+{
+	text-indent : 20px;
+	text-align : justify;
 }
 
