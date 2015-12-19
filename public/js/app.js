@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$('main h3').hide();
-	$('main section').show();
+	$('main section').hide();
 
 	var main = $('main').offset();
 	var section = $('.about-me').offset();
@@ -13,11 +13,11 @@ $(document).ready(function(){
 
 		if($(document).scrollTop()*2 > main.top)
 		{
-		 	$('main h3,.about-me').fadeIn(1000);
+		 	$('main h3, main section').fadeIn(1000);
 		}
 		else if($(document).scrollTop()*2 < main.top)
 		{
-			$('main h3,.about-me').fadeOut(1000);
+			$('main h3, main section').fadeOut(1000);
 		}
 	});
 

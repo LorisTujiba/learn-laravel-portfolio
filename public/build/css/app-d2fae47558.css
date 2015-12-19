@@ -138,8 +138,10 @@ header nav ul li {
 }
 
 main {
-  height: 100%;
+  min-height: 100%;
   font-family: 'Rajdhani', sans-serif;
+  position: relative;
+  overflow: auto;
 }
 
 main h3 {
@@ -154,6 +156,35 @@ main > .about-me {
   width: 80%;
   margin: 0 auto;
   display: none;
+  overflow: auto;
+}
+
+main .experiences {
+  margin: 0 auto;
+  display: none;
+}
+
+main .experiences .subject-panel {
+  display: inline-block;
+  height: 300px;
+  width: 38%;
+  color: #292d35;
+}
+
+main .experiences .subject-panel > h4 {
+  display: inline-block;
+  font-size: 1.7em;
+  margin: 0;
+}
+
+main .contact-me {
+  background-image: url("../../images/me.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-color: #3f4652;
+  color: white;
+  width: 100%;
+  height: 500px;
 }
 
 footer {

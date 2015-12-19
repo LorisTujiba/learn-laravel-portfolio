@@ -32,14 +32,7 @@
 		<main>
 			@yield('main')
 		</main>
-		<footer>			
-			<div class="icon-wrapper">
-				<i class="fa fa-facebook"></i>				
-			</div>
-
-			<div class="icon-wrapper">
-				<i class="fa fa-git"></i>				
-			</div>
+		<footer>						
 			
 		</footer>		
 	</body>
