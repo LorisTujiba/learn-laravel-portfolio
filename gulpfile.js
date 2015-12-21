@@ -18,6 +18,10 @@ elixir(function(mix) {
     	'public/js/app.js'
     )
     .copy(
+        'bower_components/jquery/dist/jquery.js',
+        'public/js/jquery.js'
+    )
+    .copy(
     	'bower_components/jquery/dist/jquery.min.js',
     	'public/js/jquery.min.js'
 	)
@@ -25,5 +29,9 @@ elixir(function(mix) {
     	'bower_components/jquery/dist/jquery.min.map',
     	'public/js/jquery.min.map'
 	)
+    .copy(
+        'bower_components/Chart.js/Chart.js',
+        'public/js/chart.js'
+    )
     .version('public/css/app.css');
 });

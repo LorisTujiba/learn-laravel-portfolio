@@ -34,7 +34,16 @@ header
 			li
 			{
 				display : inline;
-				list-style-type : none;				
+				list-style-type : none;		
+				padding : 0 2em;	
+				cursor : pointer;	
+				transition : 0.15s;
+				font-size : 1.2em;
+				font-weight : bold;
+			}
+			li:hover
+			{
+				text-shadow : 2px 2px 5px #a8ff61;
 			}
 		}
 		
@@ -77,37 +86,52 @@ header
 main
 {
 	min-height : 100%;
-	font-family: 'Rajdhani', sans-serif;
+	font-family: 'Roboto Slab', serif;
+	font-size : 14px;
 	position : relative;
 	overflow : auto;
+	color : $secondaryColor;
 	h3
 	{
 		text-align : center;
 		font-size : 2em;
 		letter-spacing: 12px;
 		font-weight : bold;
-		display : none;
+		padding-top : 20px;
 	}
 
 	> .about-me
 	{
 		width : 80%;
 		margin : 0 auto;	
-		display : none;	
-		overflow : auto;
+		overflow : hidden;
+		font-size : 1.2em;
+
+		.about-me-content
+		{
+			display : inline-block;
+			width : 48%;
+			vertical-align : text-top;
+			img
+			{
+				display : block;
+				margin : auto;
+			}
+		}
 	}
 
 	.experiences
 	{		
+		height : auto;
 		margin : 0 auto;	
-		display : none;	
 		
-		.subject-panel
+		.subject-item
 		{
 			display : inline-block;
-			height : 300px;
-			width : 38%;
-			color : $secondaryColor;
+			height : auto;
+			width : 33%;
+			color : $secondaryColor;		
+			vertical-align : text-top;	
 
 			> h4
 			{
@@ -116,11 +140,30 @@ main
 				margin : 0;
 			}
 
-			ul
-			{				
+			h5
+			{
+				margin : 5px;
+				font-size : 1em;
+			}
+
+			h6
+			{			
+				font-style : oblique;
+				margin : 0;
+				font-size : 0.8em;
 			}
 		}
+	}
 
+	.skills
+	{
+		padding-bottom : 50px;
+
+		#skill-Chart
+		{
+			display : block;
+			margin : auto;
+		}
 	}
 
 	.contact-me
@@ -131,15 +174,62 @@ main
 		background-color : $thirdColor;
 		color : white;
 		width : 100%;
-		height : 500px;
+		height : 580px;
+		overflow : hidden;
+
+		h3
+		{
+			padding-top : 30px;
+			margin : 0;
+		}
+
+		h4
+		{
+			text-align : center;
+			letter-spacing : 2px;
+		}
+
+		.media-social-panel
+		{
+			width : 212px;
+			margin : auto;
+		}
+
+		fieldset > div
+		{
+			margin : 10px 0;
+		}
 	}
+}
+
+.panel
+{
+	width : 80%;
+	margin : auto;
+	padding : 30px 0;
 }
 
 footer
 {
 	width : 100%;
-	height : 100px;
+	height : 240px;
 	background-color : $secondaryColor;
+
+	.footer-item
+	{
+		vertical-align : text-top;
+		display : inline-block;
+		width : 32.3%;
+		height : auto;
+	}
+
+	h4,h5,h6
+	{
+		font-weight : normal;
+		margin : 10px 0;
+		color : white;
+		letter-spacing : 2px;
+	}
 }
 
 p
@@ -148,3 +238,7 @@ p
 	text-align : justify;
 }
 
+a
+{
+	color : white;
+}

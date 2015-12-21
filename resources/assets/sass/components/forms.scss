@@ -4,17 +4,24 @@ fieldset
 	display : inline-block;
 }
 
-input[type="textarea"],input[type="email"]
+::placeholder 
+{
+	color : #ffb861;
+}
+
+input[type="email"]
 {
 	display : block;
 	margin : 10px 0;
 	border : 1px solid transparent;
 	background-color : transparent;
-	border-bottom : 1px solid black;
+	border-bottom : 2px solid #6961ff;
 	font-family: 'Rajdhani', sans-serif;
 	font-style : oblique;
 	text-align : center;
+	font-weight : bold;
 	font-size : 1.5em;
+	color : #ffb861;
 }
 
 input:focus
@@ -27,8 +34,10 @@ textarea
 	display : block;
 	border : 1px solid transparent;
 	background-color : transparent;
-	border-bottom : 1px solid black;
+	border-bottom : 2px solid #6961ff;
 	resize : none;
+	font-weight : bold;
+	color : #ffb861;
 }
 
 textarea:focus
