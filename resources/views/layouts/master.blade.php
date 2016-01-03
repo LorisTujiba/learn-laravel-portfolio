@@ -1,7 +1,12 @@
 <!DOCTYPE>
 <html>
 	<head>
-		<title></title>
+		<title>Loris Tujiba</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>	
+		<meta name="Owner" content="Loris Tujiba"/>
+		<meta name="Author" content="Loris Tujiba"/>
+		<meta name="keywords" content="Loris,Tujiba"/>
+		<meta name="Content-Type" content="text/html"/>
 		<meta charset="UTF-8">
 		<meta name="_token" content="{{csrf_token()}}"/>
 		<link rel="stylesheet" href="{{elixir('css/app.css')}}">
@@ -9,6 +14,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Rajdhani:600,300,400' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=id"></script>
 	</head>
 	<body>		
 		<header>
@@ -32,6 +38,13 @@
 					<a>
 						<li class="nav-contact">
 							Contact
+						</li>
+					</a>					
+				</ul>
+				<ul class="right-nav">
+					<a href="http://blog.loristujiba.com">
+						<li>
+							Blog
 						</li>
 					</a>
 				</ul>

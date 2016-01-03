@@ -28,13 +28,14 @@ function postMessage()
 	    url: '/postMessage',
 	    type: 'POST',
 	    data: {
-	    	'email' : 'asdasd',
-	    	'message' : 'ytjtyuyt'
+	    	'gresponse' : grecaptcha.getResponse(),
+	    	'email' : $('#email').val(),
+	    	'message' : $('#message').val()
 	    },
 	    dataType: 'JSON',
 	    success: function (data)
 	    {
-	        alert(data.email);
+	    	$("#output").append(data.notice);	        
     	}
 	});
 }

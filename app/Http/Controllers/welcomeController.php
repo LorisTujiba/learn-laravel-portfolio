@@ -12,18 +12,20 @@ class welcomeController extends Controller
 {
     function sendMessage(Request $request)
     {    	  
-    	$secret = '6LekghMTAAAAAO9LeK19tw3PkDTGcKv4n3KgURTS';
-    	$recaptcha = new \ReCaptcha\ReCaptcha($secret);
-    	$resp = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
-    	if ($resp->isSuccess())
+    	$secret = '6LekghMTAAAAAO9LeK19tw3PkDTGcKv4n3KgURTS';    	
+    	$response = $request->input('gresponse');
+    	$recaptcha = new \ReCaptcha\ReCaptcha($secret);    	
+    	$resp = $recaptcha->verify($response, $_SERVER['REMOTE_ADDR']);
+    	//$resp=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secret."&response=".$_POST['g-recaptcha-response']."&remoteip=".$_SERVER['REMOTE_ADDR']);
+    	if($resp->isSuccess())  
     	{
-    		if($request->ajax()) 
-			{
-		        $data = $request->input('email');
-		        return response()->json(['email'=>'dasdasdsda']);
-		    }
+    		$newMessage = new Message();
+    		$newMessage->email = $response = $request->input('email');
+    		$newMessage->message = $response = $request->input('message');
+    		$newMessage->save();
+    		return response()->json(['notice'=>"success"]);    	
     	}
    		else
-   			echo 'fail';
+   			return response()->json(['notice'=>"fail"]);  
     }
 }

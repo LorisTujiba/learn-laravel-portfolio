@@ -19,7 +19,7 @@ button {
   display: none;
 }
 
-input[type="submit"] {
+input[type="button"] {
   background-color: #a8ff61;
   color: #8043b2;
   border-radius: 4px;
@@ -154,6 +154,10 @@ header {
   color: white;
 }
 
+header nav ul {
+  float: left;
+}
+
 header nav ul li {
   display: inline;
   list-style-type: none;
@@ -166,6 +170,10 @@ header nav ul li {
 
 header nav ul li:hover {
   text-shadow: 2px 2px 5px #a8ff61;
+}
+
+header nav .right-nav {
+  float: right;
 }
 
 .heroBanner {
@@ -337,4 +345,5 @@ p {
 
 a {
   color: white;
+  text-decoration: none;
 }

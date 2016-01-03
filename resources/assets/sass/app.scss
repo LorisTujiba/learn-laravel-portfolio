@@ -31,6 +31,7 @@ header
 	{
 		ul
 		{
+			float : left;
 			li
 			{
 				display : inline;
@@ -47,6 +48,11 @@ header
 			}
 		}
 		
+	.right-nav
+	{
+		float : right;
+	}
+
 	}		
 }
 
@@ -241,4 +247,5 @@ p
 a
 {
 	color : white;
+	text-decoration : none;
 }

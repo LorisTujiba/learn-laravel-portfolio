@@ -106,15 +106,12 @@
 			</section>
 			<section>
 				<h4>Or you can leave a message here</h4>
-				<form>
+				<form method="post">
 					{{ csrf_field()}}
 					<fieldset>
-						<input type="email" name="email" placeholder="email" required="required"/>
-						<textarea cols="60" name="message" rows="5" placeholder="Your message here..." required="required"></textarea>
+						<input id="email" type="email" name="email" placeholder="email" required="required"/>
+						<textarea id="message" cols="60" name="message" rows="5" placeholder="Your message here..." required="required"></textarea>
 						<div class="g-recaptcha" data-sitekey="6LekghMTAAAAAOFHeQbBO2bYXQDz2awEwgSnDNp9"></div>
-						<script type="text/javascript"
-			                    src="https://www.google.com/recaptcha/api.js?hl=id">
-			            </script>
 						<span id="output"></span>
 					</fieldset>
 					<input onclick="postMessage();" type="button" value="Send"/>
