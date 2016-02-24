@@ -161,7 +161,6 @@ header nav ul {
 header nav ul li {
   display: inline;
   list-style-type: none;
-  padding: 0 2em;
   cursor: pointer;
   transition: 0.15s;
   font-size: 1.2em;
@@ -281,12 +280,11 @@ main .skills #skill-Chart {
 }
 
 main .contact-me {
-  background-image: url("../../images/me.jpg");
   background-position: right center;
   background-repeat: no-repeat;
   background-color: #3f4652;
   color: white;
-  width: 100%;
+  width: inherit;
   height: 580px;
   overflow: hidden;
 }
@@ -346,4 +344,13 @@ p {
 a {
   color: white;
   text-decoration: none;
+}
+
+@media screen and (max-width: 805px) {
+  nav ul li {
+    display: inline-block;
+    padding: 0;
+    color: black;
+    width: 50px;
+  }
 }

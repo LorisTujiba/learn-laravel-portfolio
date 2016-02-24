@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>	
 		<meta name="Owner" content="Loris Tujiba"/>
 		<meta name="Author" content="Loris Tujiba"/>
-		<meta name="keywords" content="Loris,Tujiba"/>
+		<meta name="keywords" content="Loris,Tujiba, Loris Tujiba, Web Developer, Freelancer"/>
 		<meta name="Content-Type" content="text/html"/>
 		<meta charset="UTF-8">
 		<meta name="_token" content="{{csrf_token()}}"/>
