@@ -20,9 +20,7 @@
 				And lastly thank you for visiting !
 			</p>		
 		</article>
-		<article class="about-me-content">
-			<img src="{{asset('images/aboutme2.png')}}" width="170" height="300"/>
-		</article>
+		<img id="profile-picture" src="{{asset('images/aboutme2.png')}}"/>
 	</section>
 	<section class="experiences">
 		<h3>Experiences</h3>	
@@ -84,7 +82,7 @@
 	</section>
 	<section class="skills">
 		<h3>Skills</h3>	
-		<canvas id="skill-Chart" width="1000" height="400"></canvas>
+		<canvas id="skill-Chart"></canvas>
 
 	</section>
 	<section class="contact-me">
