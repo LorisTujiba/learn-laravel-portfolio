@@ -33,5 +33,21 @@ elixir(function(mix) {
         'bower_components/Chart.js/Chart.js',
         'public/js/chart.js'
     )
+    .copy(
+        'bower_components/fancybox/source/jquery.fancybox.css',
+        'public/css/jquery.fancybox.css'
+    )
+    .copy(
+        'bower_components/fancybox/source/jquery.fancybox.js',
+        'public/js/jquery.fancybox.js'
+    )
+    .copy(
+        'bower_components/fancybox/source/jquery.fancybox.pack.js',
+        'public/js/jquery.fancybox.pack.js'
+    )
+    .copy(
+        'bower_components/fancybox/lib/jquery.mousewheel-3.0.6.pack.js',
+        'public/js/jquery.mousewheel-3.0.6.pack.js'
+    )
     .version('public/css/app.css');
 });

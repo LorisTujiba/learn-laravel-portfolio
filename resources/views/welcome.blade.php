@@ -3,6 +3,7 @@
 @section('section')
 	<h1>Loris Tujiba</h1>
 	<h2>Web Developer</h2>
+	<input class="nav-contact" type="button" value="Hire Me"/>
 @endsection
 
 @section('main')	
@@ -20,7 +21,7 @@
 				And lastly thank you for visiting !
 			</p>		
 		</article>
-		<img id="profile-picture" src="{{asset('images/aboutme2.png')}}"/>
+		<img id="profile-picture" src="{{asset('images/profilepicture.png')}}"/>
 	</section>
 	<section class="experiences">
 		<h3>Experiences</h3>	
@@ -95,24 +96,23 @@
 				<a href="mailto:pisceslrz@gmail.com"class="icon-wrapper google-plus">
 					<i class="fa fa-envelope"></i>			
 				</a>
-				<div class="icon-wrapper google-plus">
-					<i class="fa fa-google-plus"></i>			
-				</div>			
+				<a href="https://www.instagram.com/please_typehere/" class="icon-wrapper instagram">
+					<i class="fa fa-instagram"></i>			
+				</a>			
 				<a href="https://id.linkedin.com/in/loris-tujiba-35680388" class="icon-wrapper linkedin">					
 					<i class="fa fa-linkedin"></i>								
 				</a>
 			</section>
 			<section>
 				<h4>Or you can leave a message here</h4>
-				<form method="post">
+				<form id="postMessage" method="post">
 					{{ csrf_field()}}
 					<fieldset>
 						<input id="email" type="email" name="email" placeholder="email" required="required"/>
 						<textarea id="message" cols="60" name="message" rows="5" placeholder="Your message here..." required="required"></textarea>
-						<div class="g-recaptcha" data-sitekey="6LekghMTAAAAAOFHeQbBO2bYXQDz2awEwgSnDNp9"></div>
-						<span id="output"></span>
+						<div class="g-recaptcha" data-sitekey="6LekghMTAAAAAOFHeQbBO2bYXQDz2awEwgSnDNp9"></div>						
 					</fieldset>
-					<input onclick="postMessage();" type="button" value="Send"/>
+					<a href="#output" class="fancybox"><input  onclick="postMessage();" type="button" value="Send"/></a>
 				</form>
 			</section>
 		</div>

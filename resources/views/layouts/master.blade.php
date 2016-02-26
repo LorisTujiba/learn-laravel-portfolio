@@ -9,12 +9,18 @@
 		<meta name="Content-Type" content="text/html"/>
 		<meta charset="UTF-8">
 		<meta name="_token" content="{{csrf_token()}}"/>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 		<link rel="stylesheet" href="{{elixir('css/app.css')}}">
+		<link rel="stylesheet" href="{{URL::asset('css/jquery.fancybox.css')}}">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Rajdhani:600,300,400' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+		<script src="{{URL::asset('js/jquery.min.js')}}"></script>
 		<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=id"></script>
+		<script src="{{URL::asset('js/jquery.mousewheel-3.0.6.pack.js')}}"></script>
+		<script src="{{URL::asset('js/jquery.fancybox.js')}}"></script>
+		<script src="{{URL::asset('js/jquery.fancybox.pack.js')}}"></script>		
 	</head>
 	<body>		
 		<header>
@@ -77,8 +83,9 @@
 				<h6>&copy 2015 Copyright Loris Tujiba</h6>
 			</div>							
 		</footer>		
-	</body>
-	<script src="{{URL::asset('js/jquery.min.js')}}"></script>
+		<div id="output">
+		</div>
+	</body>	
 	<script src="{{URL::asset('js/chart.js')}}"></script>
-	<script src="{{URL::asset('js/app.js')}}"></script>
+	<script src="{{URL::asset('js/app.js')}}"></script>	
 </html>

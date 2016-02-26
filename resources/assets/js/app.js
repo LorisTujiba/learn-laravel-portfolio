@@ -23,6 +23,7 @@ function create()
 
 function postMessage()
 {
+	$("#output").empty();
 	$.ajax(
 	{
 	    url: '/postMessage',
@@ -35,7 +36,16 @@ function postMessage()
 	    dataType: 'JSON',
 	    success: function (data)
 	    {
-	    	$("#output").append(data.notice);	        
+	    	if(data.notice == 'success')	  
+	    	{  		
+	    		$("#output").append("<h3>Thank you!</h3><h4>Your message has been delivered</h4>");	        
+	    		$('#postMessage').reset();
+	    	}
+	    	else
+	    	{
+	    		$("#output").append("<h3>Fail to Send</h3><h4>Sorry your messages does not fulfil certain condition</h4>");	        
+	    		$('#postMessage').reset();
+	    	}
     	}
 	});
 }
@@ -48,6 +58,10 @@ var onloadCallback = function() {
 
 $(document).ready(function(){
 
+	$(".fancybox").fancybox({'width':400,
+                         'height':120,
+                         'autoSize' : false});
+
 	$.ajaxSetup({
 	  headers: {
 	    'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
@@ -56,6 +70,7 @@ $(document).ready(function(){
 
 	var skills = $('.skills').offset();
 	var section = $('.about-me').offset();	
+	var experience = $('.experiences').offset();	
 	var contact = $('.contact-me').offset();	
 	var main = $('main').offset();	
 	var i = 0;
@@ -68,6 +83,16 @@ $(document).ready(function(){
             scrollTop: main.top
         }, 600);
 	});
+
+	$('.nav-experiences').click(function(e)
+	{
+		e.preventDefault();
+
+        $("body, html").animate({ 
+            scrollTop: experience.top
+        }, 600);
+	});
+
 	$('.nav-skills').click(function(e)
 	{
 		e.preventDefault();
